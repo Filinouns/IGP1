@@ -20,7 +20,8 @@ void Escena::draw() {
 	ejes.draw();
 	//triangulo.draw();
 	//piramide.draw();
-	drawDiabolo();
+	//drawDiabolo();
+	tri.draw();
 }
 
 void Escena::drawDiabolo() {
@@ -147,7 +148,7 @@ TriAnimado::TriAnimado(GLdouble rotacion, GLdouble giro, GLdouble radio) {
 	_rad = radio;
 };
 
-void TriAnimado::draw() {
+void const TriAnimado::draw() {
 	GLdouble radio = getRadio();
 	GLdouble x = radio * cos(_giro / 6.28);
 	GLdouble y = radio * sin(_giro / 6.28);

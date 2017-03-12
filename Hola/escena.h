@@ -47,8 +47,8 @@ class TriAnimado {
 public:
 	TriAnimado(GLdouble rotacion, GLdouble giro, GLdouble radio);
 	void update();
-	void draw();
-	GLdouble getRadio() { return _rad; };
+	void const draw();
+	GLdouble const getRadio() { return _rad; };
 private:
 	Triangulo*tri = new Triangulo(50);
 	GLdouble _rotaux, _giroaux, _rad;

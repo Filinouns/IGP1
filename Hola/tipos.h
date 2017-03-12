@@ -61,4 +61,22 @@ public:
 
 //-------------------------------------------------------------------------
 
+class CTex2 {
+public:
+	CTex2(GLdouble s, GLdouble t) : s(s), t(t) {};
+	~CTex2() {};
+public:
+	GLdouble s, t;
+};
+
+class Color4 {
+public:
+	Color4(GLdouble r, GLdouble g, GLdouble b, GLdouble a) : red(r), green(g), blue(b), alpha(a) {};
+	~Color4() {};
+public:
+	GLdouble red, green, blue, alpha;
+};
+
+//-------------------------------------------------------------------------
+
 #endif //_H_tipos_H_

@@ -165,6 +165,7 @@ void key(unsigned char key, int x, int y){
   case 't':
 	  escena.tri.update();
 	  break;
+
   default:
     need_redisplay = false;
     break;
